@@ -323,9 +323,17 @@
     </div>  
     
 
- <audio autoplay loop>
-    <source src="kalapastangan.MP3" type="audio/mpeg">
+ <audio id="bg-music" loop>
+    <source src="your-sound.mp3" type="audio/mpeg">
 </audio>
 
+<script>
+document.addEventListener("click", function() {
+    const audio = document.getElementById("bg-music");
+    audio.play();
+}, { once: true });
+</script>
+
   </body>
+
 </html>
